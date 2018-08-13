@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pfe.stage.oumast.signupandlogintabs.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/whiteyellow">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="60dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:src="@drawable/signup"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteyellow"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:background="@color/whiteyellow"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextEmailSignUp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"/>
+
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:layout_marginTop="40dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="#fff"
+                android:background="@drawable/changebackgroundcolor_orange"
+                android:drawableRight="@drawable/ic_send_black_24dp"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
